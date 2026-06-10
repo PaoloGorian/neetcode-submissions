@@ -1,0 +1,15 @@
+class Solution {
+    /**
+     * @param {number[]} nums
+     * @param {number} val
+     * @return {number}
+     */
+    removeElement(nums: number[], val: number): number {
+        let k = 0;
+        for (const num of nums) {
+            if (num === val) continue;
+            nums[k++] = num;
+        }
+        return k;
+    }
+}
